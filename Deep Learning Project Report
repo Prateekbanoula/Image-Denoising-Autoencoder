@@ -1,0 +1,98 @@
+1. Title
+
+Image Denoising using Convolutional Autoencoder
+
+
+
+2. Objective
+
+The objective of this project is to develop a deep learning model that can remove noise from document images and improve their clarity. The model learns to transform noisy or blurred images into cleaner, more readable versions.
+
+
+
+3. Dataset
+
+The dataset consists of paired images:
+
+Input (Noisy Images): Blurred or noisy document images
+Output (Clean Images): Corresponding clean versions of the same documents
+
+The dataset was preprocessed by:
+
+Converting images to grayscale
+Resizing images to 256×256
+Normalizing pixel values between 0 and 1
+
+
+
+4. Methodology
+
+This project uses a Convolutional Autoencoder, a type of neural network designed for image reconstruction tasks.
+
+Steps followed:
+
+Load noisy and clean image pairs
+Preprocess images (resize, normalize)
+
+Train the model to learn mapping:
+
+Noisy Image → Clean Image
+Evaluate model on unseen images
+Apply post-processing (sharpening) to improve output quality
+
+
+
+5. Model Architecture
+
+The model is based on a CNN Autoencoder with two main parts:
+
+Encoder:
+Extracts important features from the noisy image
+Uses convolution and pooling layers
+Decoder:
+Reconstructs the clean image from encoded features
+Uses upsampling and convolution layers
+
+Key components:
+
+Conv2D layers
+MaxPooling layers
+UpSampling layers
+Activation: ReLU and Sigmoid
+
+Loss Function: Mean Absolute Error (MAE)
+
+Optimizer: Adam
+
+
+
+6. Results
+
+The model successfully reduces noise from document images and improves readability.
+
+Observations:
+
+Noisy images become clearer after processing
+Text becomes more readable
+Slight blurring remains due to reconstruction limitations
+
+The model performs well on images similar to the training dataset.
+
+
+
+7. Applications
+
+This model can be used in:
+
+Document Enhancement: Improving scanned or blurred documents
+CCTV / Surveillance: Enhancing low-quality footage
+Image Restoration: Cleaning old or degraded images
+Mobile Photography: Improving low-light images
+
+
+
+8. Conclusion
+
+The project demonstrates that convolutional autoencoders can effectively reduce noise in document images. The model improves image clarity and readability, although some smoothing effects remain.
+
+The performance depends on the similarity between training and testing data. Future improvements can include advanced models like U-Net or GANs for better sharpness.
