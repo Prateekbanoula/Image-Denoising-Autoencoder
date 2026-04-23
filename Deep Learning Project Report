@@ -6,7 +6,8 @@ Image Denoising using Convolutional Autoencoder
 
 2. Objective
 
-The objective of this project is to develop a deep learning model that can remove noise from document images and improve their clarity. The model learns to transform noisy or blurred images into cleaner, more readable versions.
+The objective of this project is to develop a deep learning model that can remove noise from document images and improve their clarity.
+The model learns to transform noisy or blurred images into cleaner, more readable versions.
 
 
 
@@ -93,6 +94,8 @@ Mobile Photography: Improving low-light images
 
 8. Conclusion
 
-The project demonstrates that convolutional autoencoders can effectively reduce noise in document images. The model improves image clarity and readability, although some smoothing effects remain.
+The project demonstrates that convolutional autoencoders can effectively reduce noise in document images.
+The model improves image clarity and readability, although some smoothing effects remain.
 
-The performance depends on the similarity between training and testing data. Future improvements can include advanced models like U-Net or GANs for better sharpness.
+The performance depends on the similarity between training and testing data. 
+Future improvements can include advanced models like U-Net or GANs for better sharpness.
